@@ -32,7 +32,7 @@ function App() {
         initail_payment: initailPayment,
         initail_payment_percent: initailPaymentPercent,
         lease_term: leasingTerm,
-        mont: monthlyPayment,
+        monthly_payment_from: monthlyPayment,
         total_sum: totalSum,
       }
 
@@ -89,7 +89,7 @@ function App() {
             </div>
           </div>
 
-          <button disabled={fetching} className='checkout' type='submit'>Оставить заявку</button>
+          <button disabled={fetching} className='checkout' type='submit'>{fetching ? 'preloader...' : 'Оставить заявку'}</button>
         </div>
 
       </form>
