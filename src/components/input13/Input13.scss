@@ -1,0 +1,27 @@
+
+
+.right-input {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+
+.right-input-wrapper13 {
+  font-weight: 900;
+  font-size: 30px;
+  position: absolute;
+  right: 16px;
+  top: 10px;
+  span {
+    color: #575757;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 22px;
+    top: 19px;
+  }
+  
+}
+
+
+ 

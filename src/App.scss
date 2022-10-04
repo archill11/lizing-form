@@ -1,0 +1,123 @@
+.App {
+  display: grid;
+  gap: 47px;
+}
+
+.main-title {
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 90%;
+  width: 753px;
+  height: 98px;
+  max-width: calc(100vw -  48px * 2);
+
+  @media (max-width: 670px) {
+    width: 279px;
+    height: 124px;
+    font-size: 34px;
+  }
+}
+
+.lizing-form {
+  display: grid;
+  gap: 47px;
+}
+
+.checkout {
+  width: 426px;
+  height: 68px;
+  font-weight: 900;
+  font-size: 30px;
+  color: #FFFFFF;
+  background: #FF9514;
+  border-radius: 40px;
+  padding: 8px 16px 12px;
+  border: none;
+  &:hover {
+    background: #111111;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  @media (max-width: 1024px) {
+    width: 345px;
+    height: 68px;
+  }
+  @media (max-width: 767px) {
+    width: 280px;
+    height: 60px;
+    font-size: 22px;
+  }
+} 
+
+.form-body {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media (max-width: 1439px) {
+    grid-auto-flow: row;
+    grid-template-columns: auto;
+  }
+}
+
+.form-bottom {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 2fr 1fr;
+
+  @media (max-width: 1439px) {
+    grid-auto-flow: row;
+    grid-template-columns: auto;
+    gap: 44px;
+  }
+
+}
+
+.finaData {
+  display: grid;
+  grid-auto-flow: column;
+  color: #575757;
+
+  @media (max-width: 767px) {
+    grid-auto-flow: row;
+    gap: 29px;
+  }
+}
+
+.totalSum, .monthlyPayment {
+  display: grid;
+}
+
+.finaDatat__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+
+  @media (max-width: 767px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 136%;
+  }
+}
+
+.finaDatat__total {
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 90%;
+  
+  @media (max-width: 767px) {
+    font-size: 22px;
+    line-height: 20px;
+  }
+}
+
+.fokus {
+  background-color: #fff;
+  border: 1px solid #F3F3F4
+}
